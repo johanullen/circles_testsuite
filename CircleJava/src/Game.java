@@ -7,12 +7,21 @@ public class Game {
 	public static void main(String[] args) {
 		Board b = new Board(9,9);
 		b.printBoard();
-		putRandom(b,50);
-		b = new Board(9,9);
-		b.printBoard();
+		putTest(b);
+		//putRandom(b,50);
 		
+		//b = new Board(9,9);
+		//b.printBoard();	
 		//putColumn(b,1);
 		//putRow(b,4);
+	}
+	
+	private static void putTest(Board b){
+		put(b,4,8);
+		put(b,4,7);
+		put(b,4,6);
+		put(b,4,5);
+		
 	}
 	
 	private static void putColumn(Board b, int x){
